@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>فهد وذيب</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background: black;
-            color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        #محتوى img {
-            max-width: 300px;
-            margin: 20px auto;
-            display: block;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>عالم فهد وذيب</title>
+  <link rel="stylesheet" href="سي%20اس%20اس/style.css">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      overflow: hidden;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
 </head>
 <body>
-    <canvas id="النجوم"></canvas>
-
-    <section id="محتوى">
-        <h1>مرحبًا بك في عالم فهد وذيب</h1>
-        <img src="صور/wolf-anime.jpg" alt="صورة وذيب">
-    </section>
-
-    <nav id="الملاحة">
-        <a href="index.html">الرئيسية</a>
-        <a href="معرض.html">المعرض</a>
-        <a href="contact.html">اتصل بنا</a>
-    </nav>
-
-    <script src="js/stars.js"></script>
+  <canvas id="stars"></canvas>
+  <h1>مرحبًا بك في عالم فهد وذيب</h1>
+  <img src="صور/wolf-anime.jpg" alt="صورة">
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="معرض.html">المعرض</a>
+    <a href="contact.html">اتصل بنا</a>
+  </nav>
+  <script src="جافا%20سكريبت/stars.js"></script>
 </body>
 </html>
