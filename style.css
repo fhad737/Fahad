@@ -1,0 +1,45 @@
+/* خلفية النجوم المتحركة */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* تركز النص في وسط الصفحة */
+header {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* تنسيق الروابط في القائمة */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* التأثير العام للنجوم */
+#stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black url('https://i.imgur.com/8KZt8RD.png') repeat;
+  animation: animateStar 50s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animateStar {
+  from {background-position: 0 0;}
+  to {background-position: 10000px 5000px;}
+}
