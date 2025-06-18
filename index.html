@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>مرحبًا بك في موقع أبو فهد و فهد</title>
+  <title>Fahd and Theeb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      font-family: 'Cairo', sans-serif;
-      text-align: center;
-      padding-top: 150px;
       margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
     }
+
     h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
+      font-size: 3rem;
+      margin-top: 50px;
+      animation: fadeIn 2s ease forwards;
     }
+
     p {
-      font-size: 1.5em;
-      margin-bottom: 40px;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.8;
+      animation: fadeIn 3s ease forwards;
     }
-    button {
-      background-color: #ffcc00;
-      color: #333;
-      border: none;
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
       padding: 15px 30px;
-      font-size: 1.2em;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
+      background: gold;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: pulse 2s infinite;
     }
-    button:hover {
-      background-color: #e6b800;
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px gold;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(255, 215, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+    }
+
+    .icons {
+      margin-top: 50px;
+      font-size: 50px;
+    }
+
   </style>
 </head>
 <body>
-  <h1>✨ أهلاً وسهلاً بك!</h1>
-  <p>هذا الموقع الخاص بـ أبو فهد و فهد 🤝</p>
-  <button onclick="alert('شكرًا لزيارتك!')">اضغط هنا</button>
+  <h1>✨ Fahd and Theeb ✨</h1>
+  <div class="icons">🦁🐺</div>
+  <p>هنا تجد كل ما هو جديد ومميز مع فهد و الذيب. استعد للمتعة والإبداع في مكان واحد! 🚀</p>
+  <a href="#" class="btn">اكتشف المزيد</a>
 </body>
 </html>
